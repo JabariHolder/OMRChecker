@@ -1,4 +1,4 @@
-FROM python:3.7-slim-buster
+FROM python:3.8.7-slim-buster
 
 WORKDIR /app
 
@@ -23,6 +23,11 @@ RUN apt-get install -y build-essential cmake unzip pkg-config \
 RUN pip3 install --user opencv-python opencv-contrib-python
 COPY ./requirements.txt /app/requirements.txt
 RUN pip3 install -r requirements.txt
+
+## Clean up
+RUN apt-get clean
+RUN pip3 cache purge
+RUN rm -rf /var/lib/apt/lists/*
 
 ## Setup environment
 EXPOSE 3000
