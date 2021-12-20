@@ -12,6 +12,3 @@ services:
     tty: true
     restart: "no"
     entrypoint: /bin/bash
-    ports:
-      - "3000:3000"
-

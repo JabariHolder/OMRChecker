@@ -30,6 +30,4 @@ RUN pip3 cache purge
 RUN rm -rf /var/lib/apt/lists/*
 
 ## Setup environment
-EXPOSE 3000
-EXPOSE 5000
 ENTRYPOINT /bin/bash
