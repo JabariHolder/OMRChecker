@@ -65,13 +65,25 @@ qtype_data = {
         'vals': [1,2,3,0],
         'orient': 'V'
     },
+    'QTYPE_VMCQ3': {
+        'vals': ['A', 'B', 'C'],
+        'orient': 'V'
+    },
     'QTYPE_MCQ4': {
         'vals': ['A', 'B', 'C', 'D'],
         'orient': 'H'
     },
+    'QTYPE_VMCQ4': {
+        'vals': ['A', 'B', 'C', 'D'],
+        'orient': 'V'
+    },
     'QTYPE_MCQ5': {
         'vals': ['A', 'B', 'C', 'D', 'E'],
         'orient': 'H'
+    },
+    'QTYPE_VMCQ5': {
+        'vals': ['A', 'B', 'C', 'D', 'E'],
+        'orient': 'V'
     },
     # Add custom question types here-
     # ,
