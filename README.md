@@ -104,10 +104,11 @@ docker compose exec omrchecker python3 main.py
 
 _Note: To get a copy button for below commands, use [CodeCopy Chrome](https://chrome.google.com/webstore/detail/codecopy/fkbfebkcoelajmhanocgppanfoojcdmg) | [CodeCopy Firefox](https://addons.mozilla.org/en-US/firefox/addon/codecopy/)._
 
-Create VENV
+Create VENV & Run
 ```
 virtualenv --system-site-packages -p python3 ./venv
 source ./venv/bin/activate
+node template.js && python3 main.py
 ```
 
 Install opencv (Any installation method is fine.)

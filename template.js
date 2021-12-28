@@ -7,7 +7,7 @@ const baseTemplate = {
     ],
     "BubbleDimensions": [
       28,
-      16
+      13
     ],
     "Options": {
       "Marker": {
