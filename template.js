@@ -6,8 +6,8 @@ const baseTemplate = {
       1370
     ],
     "BubbleDimensions": [
-      28,
-      13
+      28, // width
+      12 // height
     ],
     "Options": {
       "Marker": {
@@ -36,8 +36,8 @@ const generateQuestionIds = (qAmount) => {
 
 const generateQBlocks = (qIDs) => {
     const blocks = {};
-    const rowPos = [110, 275, 440, 605, 770, 935]; // position of row, 0 = Q1-10, 1 = Q11-20, etc..
-    const rowOffset = [0,1,2,3,4,5,6,7,8,14]; // fix row positioning for question
+    const rowPos = [90, 275, 440, 605, 770, 935]; // position of row, 0 = Q1-10, 1 = Q11-20, etc.. (vertical)
+    const rowOffset = [0,2,8,9,12,15,25,25,30,40]; // fix row positioning for question
     let currRow = -1;
 
     qIDs.forEach((id, i) => {
@@ -53,7 +53,7 @@ const generateQBlocks = (qIDs) => {
         blocks[questionName] = {
             "qType": "QTYPE_VMCQ4",
             "orig": [
-                70 + (firstCol ? 0 : (118 * icountPerTenth) + rowOffset[icountPerTenth]),
+                90 + (firstCol ? 0 : (110 * icountPerTenth) + rowOffset[icountPerTenth]),
                 rowPos[currRow],
             ],
             "bigGaps": [
@@ -61,8 +61,8 @@ const generateQBlocks = (qIDs) => {
                 23
             ],
             "gaps": [
-                20,
-                23
+                20, // vert gaps between letter boxes
+                31 // horizontal gaps between letter boxes
             ],
             "qNos": [
                 [[id]]

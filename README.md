@@ -105,9 +105,11 @@ docker compose exec omrchecker python3 main.py
 _Note: To get a copy button for below commands, use [CodeCopy Chrome](https://chrome.google.com/webstore/detail/codecopy/fkbfebkcoelajmhanocgppanfoojcdmg) | [CodeCopy Firefox](https://addons.mozilla.org/en-US/firefox/addon/codecopy/)._
 
 Create VENV & Run
+*Ensure you have copied the relevant folder from ./samples/xx to ./inputs/xx before running*
 ```
-virtualenv --system-site-packages -p python3 ./venv
+python3 -m virtualenv venv
 source ./venv/bin/activate
+python3 -m pip install -r requirements.txt
 node template.js && python3 main.py
 ```
 
