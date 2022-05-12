@@ -36,7 +36,7 @@ const generateQuestionIds = (qAmount) => {
 
 const generateQBlocks = (qIDs) => {
     const blocks = {};
-    const rowPos = [90, 275, 440, 605, 770, 935]; // position of row, 0 = Q1-10, 1 = Q11-20, etc.. (vertical)
+    const rowPos = [90, 307, 521, 736, 952, 1169]; // vertical position of row, 0 = Q1-10, 1 = Q11-20, etc.. (vertical)
     const rowOffset = [0,2,8,9,12,15,25,25,30,40]; // fix row positioning for question
     let currRow = -1;
 
@@ -51,7 +51,7 @@ const generateQBlocks = (qIDs) => {
         if(icountPerTenth === 0) currRow++; // if is new tenth iteration, increment current row to go to next rowPos
 
         blocks[questionName] = {
-            "qType": "QTYPE_VMCQ4",
+            "qType": "QTYPE_VMCQ5",
             "orig": [
                 90 + (firstCol ? 0 : (110 * icountPerTenth) + rowOffset[icountPerTenth]),
                 rowPos[currRow],
