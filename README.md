@@ -84,10 +84,34 @@ Get a CSV sheet containing the detected responses and evaluated scores:
 
 **Operating system:** OSX or Linux is recommended although windows is also supported currently.
 
+### Using Docker
+The project is compatible with [docker](https://docker.com). If you are using docker for interactivity, run the first bash command below and then skip to Step `3. Run the Code`. if you want to directly run the app with no interactivity, use the second command.
+
+*NB: You MUST set `showimglvl = 0` in `config.py` or else you will receive errors.* If you do want to use GUI features, you will have to use XHost / XStock (Linux) or XQuartz (Mac) when running docker.
+
+To run using interactively using docker compose:
+```bash
+docker compose run --rm omrchecker
+```
+
+To run without interactivity (e.g. to directly execute main.py and exit):
+```bash
+docker compose exec omrchecker python3 main.py
+```
+
 ### 1. Install global dependencies 
 ![opencv 4.0.0](https://img.shields.io/badge/opencv-4.0.0-blue.svg) ![python 3.4+](https://img.shields.io/badge/python-3.4+-blue.svg)
 
 _Note: To get a copy button for below commands, use [CodeCopy Chrome](https://chrome.google.com/webstore/detail/codecopy/fkbfebkcoelajmhanocgppanfoojcdmg) | [CodeCopy Firefox](https://addons.mozilla.org/en-US/firefox/addon/codecopy/)._
+
+Create VENV & Run
+*Ensure you have copied the relevant folder from ./samples/xx to ./inputs/xx before running*
+```
+python3 -m virtualenv venv
+source ./venv/bin/activate
+python3 -m pip install -r requirements.txt
+node template.js && python3 main.py
+```
 
 Install opencv (Any installation method is fine.)
 ```bash

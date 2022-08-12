@@ -1,0 +1,255 @@
+{
+  "Dimensions": [
+    1200,
+    800
+  ],
+  "BubbleDimensions": [
+    28,
+    16
+  ],
+  "Options": {
+    "Marker": {
+      "RelativePath": "omr_marker.jpg",
+      "SheetToMarkerWidthRatio": 28
+    }
+  },
+  "Concatenations": {
+    "Roll": [
+      "Squad"
+    ]
+  },
+  "Singles": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5",
+    "q6",
+    "q7",
+    "q8",
+    "q9",
+    "q10"
+  ],
+  "QBlocks": {
+    "Mcq1": {
+      "qType": "QTYPE_VMCQ4",
+      "orig": [
+        188,
+        110
+      ],
+      "bigGaps": [
+        20,
+        22
+      ],
+      "gaps": [
+        20,
+        22
+      ],
+      "qNos": [
+        [
+          [
+            "q1"
+          ]
+        ]
+      ]
+    },
+    "Mcq2": {
+      "qType": "QTYPE_VMCQ4",
+      "orig": [
+        306,
+        110
+      ],
+      "bigGaps": [
+        20,
+        22
+      ],
+      "gaps": [
+        20,
+        22
+      ],
+      "qNos": [
+        [
+          [
+            "q2"
+          ]
+        ]
+      ]
+    },
+    "Mcq3": {
+      "qType": "QTYPE_VMCQ4",
+      "orig": [
+        424,
+        110
+      ],
+      "bigGaps": [
+        20,
+        22
+      ],
+      "gaps": [
+        20,
+        22
+      ],
+      "qNos": [
+        [
+          [
+            "q3"
+          ]
+        ]
+      ]
+    },
+    "Mcq4": {
+      "qType": "QTYPE_VMCQ4",
+      "orig": [
+        542,
+        110
+      ],
+      "bigGaps": [
+        20,
+        22
+      ],
+      "gaps": [
+        20,
+        22
+      ],
+      "qNos": [
+        [
+          [
+            "q4"
+          ]
+        ]
+      ]
+    },
+    "Mcq5": {
+      "qType": "QTYPE_VMCQ4",
+      "orig": [
+        660,
+        110
+      ],
+      "bigGaps": [
+        20,
+        22
+      ],
+      "gaps": [
+        20,
+        22
+      ],
+      "qNos": [
+        [
+          [
+            "q5"
+          ]
+        ]
+      ]
+    },
+    "Mcq6": {
+      "qType": "QTYPE_VMCQ4",
+      "orig": [
+        778,
+        110
+      ],
+      "bigGaps": [
+        20,
+        22
+      ],
+      "gaps": [
+        20,
+        22
+      ],
+      "qNos": [
+        [
+          [
+            "q6"
+          ]
+        ]
+      ]
+    },
+    "Mcq7": {
+      "qType": "QTYPE_VMCQ4",
+      "orig": [
+        896,
+        110
+      ],
+      "bigGaps": [
+        20,
+        22
+      ],
+      "gaps": [
+        20,
+        22
+      ],
+      "qNos": [
+        [
+          [
+            "q7"
+          ]
+        ]
+      ]
+    },
+    "Mcq8": {
+      "qType": "QTYPE_VMCQ4",
+      "orig": [
+        1014,
+        110
+      ],
+      "bigGaps": [
+        20,
+        22
+      ],
+      "gaps": [
+        20,
+        22
+      ],
+      "qNos": [
+        [
+          [
+            "q8"
+          ]
+        ]
+      ]
+    },
+    "Mcq9": {
+      "qType": "QTYPE_VMCQ4",
+      "orig": [
+        1132,
+        110
+      ],
+      "bigGaps": [
+        20,
+        22
+      ],
+      "gaps": [
+        20,
+        22
+      ],
+      "qNos": [
+        [
+          [
+            "q9"
+          ]
+        ]
+      ]
+    },
+    "Mcq10": {
+      "qType": "QTYPE_VMCQ4",
+      "orig": [
+        1250,
+        110
+      ],
+      "bigGaps": [
+        20,
+        22
+      ],
+      "gaps": [
+        20,
+        22
+      ],
+      "qNos": [
+        [
+          [
+            "q10"
+          ]
+        ]
+      ]
+    }
+  }
+}

@@ -1082,6 +1082,7 @@ def readResponse(template, image, name, savedir=None, autoAlign=False):
                                       -1)
 
                     # TODO Make this part useful! (Abstract visualizer to check status)
+                    ## cv2 text, a , b , c , d labels
                     if (detected):
                         q, val = pt.qNo, str(pt.val)
                         cv2.putText(final_marked,
